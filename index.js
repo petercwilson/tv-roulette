@@ -1,6 +1,6 @@
 'use strict';
 
-const searchURL = 'http://api.tvmaze.com/shows';
+const searchURL = 'https://api.tvmaze.com/shows';
 
 
 function displayResults(responseJson) {
@@ -10,7 +10,7 @@ function displayResults(responseJson) {
   let random = responseJson[Math.floor(Math.random() * responseJson.length)];
   console.log(random)
     $('.results').append(`
-      <img src ="${responseJson[0]}" />
+      <img src ="${random.image.medium}" />
     `)
   // for (let i = 0; i < responseJson.length; i++){
     // $('.results').append(`
