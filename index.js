@@ -1,23 +1,47 @@
 'use strict';
 
-const searchURL = 'https://www.episodate.com/api/most-popular?page=3';
+const searchURL = 'http://api.tvmaze.com/shows';
+
+let shows = [
+  {
+      title: "Designated Survivor"
+  },
+  {
+      title: "The Bachelorette"
+  },
+  {
+      title: "The Bodyguard"
+  },
+  {
+      title: "The West Wing"
+  },
+  {
+      title: "Silicon Valley"
+  }
+]
 
 function displayResults(responseJson) {
   console.log(responseJson);
   $('.fetchBtn').click(function(event) {
   $('.results').empty();
-  for (let i = 0; i < responseJson.tv_shows.length; i++){
-    $('.results').append(`
-    <img src="${responseJson.tv_shows[i].image_thumbnail_path}" /></p>
-    `) 
+  let random = responseJson[Math.floor(Math.random() * responseJson.length)];
+  console.log(random)
+  // $('.results').append(
+  //   console.log(random)
+  // )
+  // for (let i = 0; i < responseJson.length; i++){
+    // $('.results').append(`
+    // <img src="${responseJson[0].image.medium}" /></p>
+    // `) 
   $('.results').removeClass('hidden');
-    }
+    // }
   });
 };
 
+  const url = searchURL;
   console.log(searchURL);
 
-  fetch(searchURL)
+  fetch(url)
     .then(response => {
       if (response.ok) {
         return response.json();
