@@ -37,16 +37,25 @@
 
   .start {
     position: relative;
-    margin: 15%;
+    margin: 15% auto 2%;
   }
 
   .results {
     position: relative;
-    margin-top: 50px;
+    margin-top: 10%;
+    right: 270px;
   }
 
   .results > img {
     margin: 0 32%;
+  }
+
+  .results > p {
+    position: relative;
+    left: 450px;
+    bottom: 300px;
+    font-size: 1.25em;
+    color: red;
   }
   
   .error-message {

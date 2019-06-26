@@ -11,13 +11,13 @@ function displayResults(responseJson) {
   console.log(random)
     $('.results').append(`
       <img src ="${random.image.medium}" />
+      <p>Title: ${random.name}</p>
+      <p>Genre(s): ${random.genres}</p>
+      <p>Summary: ${random.summary}</p>
+      <p>Network: ${random.network.name}</p>
+      <p>Rating: ${random.rating.average}</p>
     `)
-  // for (let i = 0; i < responseJson.length; i++){
-    // $('.results').append(`
-    // <img src="${responseJson[0].image.medium}" />
-    // `) 
   $('.results').removeClass('hidden');
-    // }
   });
 };
 
