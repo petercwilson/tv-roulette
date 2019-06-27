@@ -14,7 +14,8 @@ function displayResults(responseJson) {
       <p>Title: ${random.name}</p>
       <p>Genre(s): ${random.genres}</p>
       <p>Summary: ${random.summary}</p>
-      <p>Network: ${random.network.name}</p>
+      <p>Where to Watch: ${random.network.name}</p>
+      <p>Site: <a href="${random.officialSite}">${random.officialSite}</a></p>
       <p>Rating: ${random.rating.average}</p>
     `)
   $('.results').removeClass('hidden');
@@ -35,3 +36,11 @@ function displayResults(responseJson) {
     .catch(err => {
       $('#js-error-message').text(`Something went wrong: ${err.message}`);
     });
+
+    function resetForm() {
+      $('.resetBtn').click(event => {
+      $('.results').empty();
+      });
+  }
+
+  $(resetForm);

@@ -69,10 +69,10 @@
   /* Button Styling */
 
   a.fetchBtn {
-    margin: 0 24%;
+    margin: 0 5%;
   }
   
-  .fetchBtn {
+  .fetchBtn, .resetBtn {
     -moz-box-shadow:inset 0px 1px 0px 0px #7a8eb9;
     -webkit-box-shadow:inset 0px 1px 0px 0px #7a8eb9;
     box-shadow:inset 0px 1px 0px 0px #7a8eb9;
@@ -94,7 +94,7 @@
     padding:14px 28px;
     text-decoration:none;
   }
-  .fetchBtn:hover {
+  .fetchBtn:hover, .resetBtn {
     background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #5972a7), color-stop(1, #637aad));
     background:-moz-linear-gradient(top, #5972a7 5%, #637aad 100%);
     background:-webkit-linear-gradient(top, #5972a7 5%, #637aad 100%);
