@@ -4,6 +4,7 @@
   
   body {
     font-family: 'Roboto', sans-serif;
+    background-color: aliceblue;
   }
 
   header {
@@ -29,33 +30,36 @@
   }
 
   .container {
-    max-width: 600px;
-    margin: 0 auto;
+    max-width: 1000px;
+    margin: 0 auto 400px;
+    padding-top: 50px;
     position: relative;
-    top: 200px;
+    top: 50px;
   }
 
   .start {
     position: relative;
-    margin: 15% auto 2%;
+    margin: 150px auto 0;
+    top: 10px;
   }
 
   .results {
     position: relative;
-    margin-top: 10%;
-    right: 270px;
+    padding: 40px;
+    width: 1000px;
+    height: 100%;
   }
 
   .results > img {
-    margin: 0 32%;
+    margin: 0 39px 25px;
+    float: right;
   }
 
   .results > p {
-    position: relative;
     left: 450px;
     bottom: 300px;
-    font-size: 1.25em;
-    color: red;
+    font-size: 1em;
+    color: lightslategray;
   }
   
   .error-message {

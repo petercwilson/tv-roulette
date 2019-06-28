@@ -11,7 +11,7 @@ function displayResults(responseJson) {
   console.log(random)
     $('.results').append(`
       <img src ="${random.image.medium}" />
-      <p>Title: ${random.name}</p>
+      <p>Title: <a href=https://www.imdb.com/title/${random.externals.imdb}>${random.name}</a></p>
       <p>Genre(s): ${random.genres}</p>
       <p>Summary: ${random.summary}</p>
       <p>Where to Watch: ${random.network.name}</p>
@@ -39,7 +39,7 @@ function displayResults(responseJson) {
 
     function resetForm() {
       $('.resetBtn').click(event => {
-      $('.results').empty();
+      $('.results').addClass('hidden');
       });
   }
 
