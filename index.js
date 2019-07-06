@@ -1,17 +1,17 @@
 'use strict';
 
 const searchURL = 'https://api.tvmaze.com/shows';
-
+const youTubeURL = 'https://www.googleapis.com/youtube/v3/search?part=snippet&maxResults=10&key=AIzaSyDFIlqkeyIwWwdg3tvu8sgPbp63Pl_BmrA'
 
 function displayResults(responseJson) {
   console.log(responseJson);
   $('.fetchBtn').click(function(event) {
   $('.results').empty();
   let random = responseJson[Math.floor(Math.random() * responseJson.length)];
-  console.log(random)
+  console.log(random.name)
     $('.results').append(`
       <img src ="${random.image.medium}" />
-      <p>Title: <a href=https://www.imdb.com/title/${random.externals.imdb}>${random.name}</a></p>
+      <p>Title: ${random.name}</p>
       <p>Genre(s): ${random.genres}</p>
       <p>Summary: ${random.summary}</p>
       <p>Where to Watch: ${random.network.name}</p>
@@ -22,10 +22,7 @@ function displayResults(responseJson) {
   });
 };
 
-  const url = searchURL;
-  console.log(searchURL);
-
-  fetch(url)
+  fetch(searchURL)
     .then(response => {
       if (response.ok) {
         return response.json();
@@ -37,10 +34,10 @@ function displayResults(responseJson) {
       $('#js-error-message').text(`Something went wrong: ${err.message}`);
     });
 
-    function resetForm() {
-      $('.resetBtn').click(event => {
-      $('.results').addClass('hidden');
-      });
+function resetForm() {
+  $('.resetBtn').click(event => {
+  $('.results').addClass('hidden');
+    });
   }
 
   $(resetForm);
