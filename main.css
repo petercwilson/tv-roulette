@@ -299,6 +299,13 @@ body {
   background-repeat: repeat;
   }
 
+.start {
+  position: relative;
+  margin: 0 auto;
+  top: 10px;
+  left: 34px;
+}
+
 #ytplayer {
   position: relative;
   width: 734px;
