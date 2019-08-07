@@ -129,9 +129,9 @@ h2 {
 
 .video-container {
   position: relative;
-  top: -750px;
+  top: -850px;
   right: 682px;
-  margin: 0 auto;
+  margin: 75px auto 200px;
   padding-top: 50px;
 }
 
@@ -245,6 +245,45 @@ body {
   min-height: 18px;
   margin-right: 20px;
   }
+
+#ytplayer {
+  position: relative;
+  width: 340px;
+  height: 271px;
+  }
+
+.video-container {
+  position: relative;
+  top: -649px;
+  right: 10px;
+  margin: 0 auto;
+  }
+
+.close {
+  position: relative;
+  top: -288px;
+  left: 322px;
+  }
+
+.start {
+  position: relative;
+  margin: 0 auto;
+  top: 10px;
+  text-align: center;
+}
+
+.start .btn {
+  margin: 5px auto;
+  border: none;
+}
+
+.btn-large {
+  font-size: 12px;
+  padding: 9px 1em;
+  /* min-width: 112px; */
+  /* min-height: 46px; */
+  margin-right: 7px;
+  }
 }
 
 @media only screen and (min-width:461) and (max-width: 720px) {
@@ -262,10 +301,21 @@ body {
 
 #ytplayer {
   position: relative;
-  top: 25px;
-  left: 288px;
-  width: 800px;
-  height: 600px;
+  width: 734px;
+  height: 582px;
+  }
+
+.video-container {
+  position: relative;
+  top: -758px;
+  right: 101px;
+  margin: 0 auto;
+  }
+
+.close {
+  position: relative;
+  top: -612px;
+  left: 717px;
   }
 }
 
@@ -273,6 +323,25 @@ body {
 body {
   background-image: url('img/fanart_1240.jpg');
   background-repeat: repeat;
+  }
+
+#ytplayer {
+  position: relative;
+  width: 734px;
+  height: 582px;
+  }
+
+.video-container {
+  position: relative;
+  top: -758px;
+  right: 101px;
+  margin: 0 auto;
+  }
+
+.close {
+  position: relative;
+  top: -612px;
+  left: 717px;
   }
 }
 
