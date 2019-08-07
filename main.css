@@ -1,148 +1,299 @@
 * {
     box-sizing: border-box;
   }
- 
-  
-  body {
-    font-family: 'Roboto', sans-serif;
-  }
 
-  header {
-      background-color: black;
-      font-size: 1.75em;
-      position: absolute;
-      top: 0;
-      left: 0px;
-  }
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: black;
+  background-image: url('img/fanart_1760.jpg');
+  background-repeat: no-repeat;
+  position: fixed;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+}
 
-  header > h1 {
-      margin: 10px 18px;
-      text-align: left;
-      color: red;
-      font-size: 1.75em;
-  }
-
-  h2 {
-    text-align: center;
-    margin-bottom: 100px;
-  }
-
-  .bg-container {
-    background: url('img/fanart-full-wgradient.jpg');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
+header {
     background-color: black;
-    background-attachment: fixed;
+    font-size: 1.75em;
     position: fixed;
-    width: 100%;
-    height: 1200px;;
     top: 0;
-    left: 0;
+    left: 600px;
+}
+
+header > h1 {
+  margin: 10px 18px;
+  text-align: left;
+  color: red;
+  font-size: .50em;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+h1 {
+  font-size: 2em;
+  color: white;
+}
+
+h2 {
+  text-align: center;
+  color: white;
+  position: relative;
+  top: 0;
+  right: 56px;
+}
+
+.left-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 40px 60px 40px 24px;
+  position: relative;
+  top: 50px;
+}
+
+.start {
+  position: relative;
+  margin: 0 auto 0;
+  top: 10px;
+}
+
+.start .btn {
+  margin: 5px 155px;
+  border: none;
+}
+
+#add-buttons {
+  position: relative;
+  top: -135px;
+  left: 42px;
+}
+
+.video-btn {
+  position: relative;
+  border: none;
+}
+
+.add-btn {
+  padding-right: 20px;
+  border: none;
+}
+
+.close {
+  position: relative;
+  bottom: 792px;
+  left: 1675px;
+  background-color: black;
+  border-radius: 40px;
+  color: white;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+.start > p {
+  font-size: 1.25em;
+  color: white;
+}
+
+.results {
+  position: relative;
+  margin-top: 20px;
+  height: 200px;
+}
+
+.results > img {
+  margin: 0 auto;
+}
+
+.results > p {
+  left: 450px;
+  bottom: 300px;
+  font-size: 1em;
+  color: lightslategray;
+}
+
+.thumbnail {
+  width: 50%;
+}
+
+#overview {
+  color: white;
+  font-size: 14px;
+  width: 200px;
+  position: relative;
+  bottom: 410px;
+  left: 304px;
+}
+
+.video-container {
+  position: relative;
+  top: -750px;
+  right: 682px;
+  margin: 0 auto;
+  padding-top: 50px;
+}
+
+.error-message {
+    color: red;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Button Styling */
+
+.add-btn .btn {
+display: inline-block;
+text-decoration: none;
+line-height: 1em;
+vertical-align: middle;
+cursor: pointer;
+font-weight: 400;
+letter-spacing: .1px;
+-webkit-border-radius: 2px;
+-moz-border-radius: 2px;
+border-radius: 2px;
+-webkit-user-select: none;
+-moz-user-select: none;
+-ms-user-select: none;
+user-select: none;
+text-align: center;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+border: 0;
+position: relative;
+color: #000;
+background-color: #e6e6e6;
+background-image: -webkit-gradient(linear,left top,left bottom,from(#e6e6e6),to(#ddd));
+background-image: -webkit-linear-gradient(top,#e6e6e6,#ddd);
+background-image: -moz- oldlinear-gradient(top,#e6e6e6,#ddd);
+background-image: -o-linear-gradient(top,#e6e6e6,#ddd);
+background-image: linear-gradient(to bottom,#e6e6e6,#ddd);
+-webkit-box-shadow: 0 1px 0 rgba(0,0,0,.2);
+-moz-box-shadow: 0 1px 0 rgba(0,0,0,.2);
+box-shadow: 0 1px 0 rgba(0,0,0,.2);
+}
+
+.btn-red {
+color: #fff;
+background-color: #e50914;
+background-image: -webkit-gradient(linear,left top,left bottom,from(#e50914),to(#db0510));
+background-image: -webkit-linear-gradient(top,#e50914,#db0510);
+background-image: -moz- oldlinear-gradient(top,#e50914,#db0510);
+background-image: -o-linear-gradient(top,#e50914,#db0510);
+background-image: linear-gradient(to bottom,#e50914,#db0510);
+-webkit-box-shadow: 0 1px 0 rgba(0,0,0,.45);
+-moz-box-shadow: 0 1px 0 rgba(0,0,0,.45);
+box-shadow: 0 1px 0 rgba(0,0,0,.45);
+}
+
+.btn-large {
+font-size: 20px;
+padding: 14px 2em;
+min-width: 112px;
+min-height: 48px;
+margin-right: 40px;
+}
+
+a:focus,
+button:focus,
+input:focus,
+textarea:focus {
+outline: none;
+}
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 320px) and (max-width: 460px) {
+body {
+  background-image: url('img/fanart_460.jpg');
+  background-repeat: repeat;
+}
+
+.results > img {
+  margin: 0 5em;
+}
+
+.thumbnail {
+  width: 60%;
+}
+
+#overview {
+  color: white;
+  font-size: 14px;
+  width: 200px;
+  margin: 0 6em;
+  top: 0;
+  left: 0;
+}
+
+#add-buttons {
+  margin: 0 1em;
+  top: 13px;
+  left: 61px;
+  position: relative;
+}
+
+.video-btn, .add-btn {
+  font-size: 10px;
+  padding: 7px 1em;
+  min-width: 60px;
+  min-height: 18px;
+  margin-right: 20px;
+  }
+}
+
+@media only screen and (min-width:461) and (max-width: 720px) {
+body {
+  background-image: url('img/fanart_720.jpg');
+  background-repeat: repeat;
+  }
+}
+
+@media only screen and (min-width: 721px) and (max-width: 980px) {
+body {
+  background-image: url('img/fanart_980.jpg');
+  background-repeat: repeat;
   }
 
-  .left-container {
-    max-width: 600px;
-    margin: 0 auto;
-    padding: 40px 60px 40px 24px;
-    position: relative;
-    top: 50px;
-    float: left;
+#ytplayer {
+  position: relative;
+  top: 25px;
+  left: 288px;
+  width: 800px;
+  height: 600px;
+  }
+}
+
+@media only screen and (min-width:981px) and (max-width: 1240px) {
+body {
+  background-image: url('img/fanart_1240.jpg');
+  background-repeat: repeat;
+  }
+}
+
+@media only screen and (min-width:1241px) and (max-width: 1500px) {
+body {
+  background-image: url('img/fanart_1500.jpg');
+  background-repeat: repeat;
+  }
+}
+
+@media only screen and (min-width:1501px) and (max-width: 1760px) {
+body {
+  background-image: url('img/fanart_1760.jpg');
+  background-repeat: repeat;
   }
 
-  .start {
-    position: relative;
-    margin: 0 auto 0;
-    top: 10px;
+#ytplayer {
+  position: relative;
+  top: 25px;
+  left: 288px;
+  width: 1400px;
+  height: 800px;
   }
-
-  .start > p {
-    font-size: 1.25em;
-    color: white;
-  }
-
-  .results {
-    position: relative;
-    padding: 40px;
-    width: 400px;
-    height: 100%;
-  }
-
-  .results > img {
-    margin: 0 39px 25px;
-    float: right;
-  }
-
-  .results > p {
-    left: 450px;
-    bottom: 300px;
-    font-size: 1em;
-    color: lightslategray;
-  }
-  
-  .error-message {
-      color: red;
-  }
-  
-  .hidden {
-    display: none;
-  }
-
-  /* Button Styling */
-
-  a.fetchBtn {
-    margin: 0 5%;
-  }
-  
-  .fetchBtn, .resetBtn {
-    -moz-box-shadow:inset 0px 1px 0px 0px #7a8eb9;
-    -webkit-box-shadow:inset 0px 1px 0px 0px #7a8eb9;
-    box-shadow:inset 0px 1px 0px 0px #7a8eb9;
-    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #637aad), color-stop(1, #5972a7));
-    background:-moz-linear-gradient(top, #637aad 5%, #5972a7 100%);
-    background:-webkit-linear-gradient(top, #637aad 5%, #5972a7 100%);
-    background:-o-linear-gradient(top, #637aad 5%, #5972a7 100%);
-    background:-ms-linear-gradient(top, #637aad 5%, #5972a7 100%);
-    background:linear-gradient(to bottom, #637aad 5%, #5972a7 100%);
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#637aad', endColorstr='#5972a7',GradientType=0);
-    background-color:#637aad;
-    border:1px solid #314179;
-    display:inline-block;
-    cursor:pointer;
-    color:#ffffff;
-    font-family:Arial;
-    font-size:24px;
-    font-weight:bold;
-    padding:14px 28px;
-    text-decoration:none;
-  }
-  .fetchBtn:hover, .resetBtn {
-    background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #5972a7), color-stop(1, #637aad));
-    background:-moz-linear-gradient(top, #5972a7 5%, #637aad 100%);
-    background:-webkit-linear-gradient(top, #5972a7 5%, #637aad 100%);
-    background:-o-linear-gradient(top, #5972a7 5%, #637aad 100%);
-    background:-ms-linear-gradient(top, #5972a7 5%, #637aad 100%);
-    background:linear-gradient(to bottom, #5972a7 5%, #637aad 100%);
-    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#5972a7', endColorstr='#637aad',GradientType=0);
-    background-color:#5972a7;
-  }
-  .fetchBtn:active {
-    position: relative;
-    top:1px;
-  }
-
-  /* Media Queries */
-
-  @media only screen and (max-width: 375px) {
-    .bg-container {
-      background-image: url('img/fanart-mobile375.jpg');
-      /* background-position: top left; */
-    }
-  }
-
-  @media only screen and (max-width: 765px) {
-    .bg-container {
-      background-image: url('img/fanart-mobile765.jpg');
-      /* background-position: top left; */
-    }
-  }
+}
