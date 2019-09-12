@@ -43,9 +43,14 @@ function getMovies(responseJson) {
 }
 
 
+
 function listenForShow(responseJson) {
-  getMovies(responseJson);
-};
+  $('.results').on('click', '.add-btn', function(event) {
+    console.log('the add-button was pressed')
+    $('.results').empty();
+    $('.results').append(`<p>THIS IS WHERE I NEED THE NEXT SHOW TO APPEAR</p>`)
+  })
+}
 
 
 function closeButton(event) { 
@@ -66,4 +71,5 @@ fetch(url)
     $('#js-error-message').text(`Something went wrong: ${err.message}`);
   });
 
+$(listenForShow);
 $(closeButton);
