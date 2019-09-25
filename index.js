@@ -23,7 +23,7 @@ function showTvShowsOnClick(responseJson) {
           <p>${firstRandom.overview}</p>
         </div>
         <div id="add-buttons">
-          <button class="add-btn btn-red btn-large" role="link">fetch tv show</button>
+          <button class="add-btn btn-red btn-large" role="link">get another tv show</button>
           <button class="btn btn-red btn-large video-btn" role="link">watch trailer</button>
         </div>
       `)
@@ -32,7 +32,7 @@ function showTvShowsOnClick(responseJson) {
       $('.video-container').empty();
       $('.results').append(`
         <div class="video-container">
-          <iframe id="ytplayer" type="text/html" width="1200" height="800"
+          <iframe id="ytplayer" type="text/html" width="auto" height="auto"
           src="https://www.youtube.com/embed/?listType=search&list=${firstRandom.name} trailer"
           frameborder="0" allowfullscreen>
           </iframe>
@@ -47,7 +47,6 @@ function showTvShowsOnClick(responseJson) {
 
 function listenForNextShow(responseJson) {
   $('.results').on('click', '.add-btn', function(event) {
-    console.log('the add-button was pressed')
     const secondRandom = responseJson.results[Math.floor(Math.random() * responseJson.results.length)];
       $('.start').hide();
       $('.results').empty();
@@ -58,7 +57,7 @@ function listenForNextShow(responseJson) {
           <p>${secondRandom.overview}</p>
         </div>
         <div id="add-buttons">
-          <button class="add-btn btn-red btn-large" role="link">fetch tv show</button>
+          <button class="add-btn btn-red btn-large" role="link">get another tv show</button>
           <button class="btn btn-red btn-large video-btn" role="link">watch trailer</button>
         </div>
       `)
@@ -67,7 +66,7 @@ function listenForNextShow(responseJson) {
       $('.video-container').empty();
       $('.results').append(`
         <div class="video-container">
-          <iframe id="ytplayer" type="text/html" width="1200" height="800"
+          <iframe id="ytplayer" type="text/html" width="auto" height="auto"
           src="https://www.youtube.com/embed/?listType=search&list=${secondRandom.name} trailer"
           frameborder="0" allowfullscreen>
           </iframe>
