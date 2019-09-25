@@ -7,11 +7,15 @@ body {
   background-color: black;
   background-image: url('img/fanart_1760.jpg');
   background-repeat: no-repeat;
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   height: auto;
   top: 0;
   left: 0;
+}
+
+.bg-container {
+ 
 }
 
 header {

@@ -29,6 +29,7 @@ function showTvShowsOnClick(responseJson) {
       `)
     $('.results').removeClass('hidden');
     $('.left-container').on('click', '.video-btn', function(event) {
+      $('.video-container').empty();
       $('.results').append(`
         <div class="video-container">
           <iframe id="ytplayer" type="text/html" width="1200" height="800"
@@ -63,6 +64,7 @@ function listenForNextShow(responseJson) {
       `)
     $('.results').removeClass('hidden');
     $('.left-container').on('click', '.video-btn', function(event) {
+      $('.video-container').empty();
       $('.results').append(`
         <div class="video-container">
           <iframe id="ytplayer" type="text/html" width="1200" height="800"
@@ -91,7 +93,7 @@ fetch(url)
     throw new Error(response.statusText);
   }) 
   .then(displayResults)
-  .then(listenForNextShow)
+  // .then(listenForNextShow)
   .catch(err => {
     $('#js-error-message').text(`Something went wrong: ${err.message}`);
   });
