@@ -23,7 +23,7 @@ function showTvShowsOnClick(responseJson) {
           <p>${firstRandom.overview}</p>
         </div>
         <div id="add-buttons">
-          <button class="add-btn btn-red btn-large" role="link">get another tv show</button>
+          <button class="add-btn btn-red btn-large" role="link">get show</button>
           <button class="btn btn-red btn-large video-btn" role="link">watch trailer</button>
         </div>
       `)
@@ -57,7 +57,7 @@ function listenForNextShow(responseJson) {
           <p>${secondRandom.overview}</p>
         </div>
         <div id="add-buttons">
-          <button class="add-btn btn-red btn-large" role="link">get another tv show</button>
+          <button class="add-btn btn-red btn-large" role="link">get show</button>
           <button class="btn btn-red btn-large video-btn" role="link">watch trailer</button>
         </div>
       `)
