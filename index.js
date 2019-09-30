@@ -32,7 +32,7 @@ function showTvShowsOnClick(responseJson) {
       $('.video-container').empty();
       $('.results').append(`
         <div class="video-container">
-          <iframe id="ytplayer" type="text/html" width="auto" height="auto"
+          <iframe id="ytplayer" type="text/html" width="800px" height="600px"
           src="https://www.youtube.com/embed/?listType=search&list=${firstRandom.name} trailer"
           frameborder="0" allowfullscreen>
           </iframe>

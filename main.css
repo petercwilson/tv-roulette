@@ -12,10 +12,6 @@ body {
   left: 0;
 }
 
-.bg-container {
- 
-}
-
 header {
     background-color: black;
     font-size: 1.75em;
@@ -84,8 +80,8 @@ h2 {
 
 .close {
   position: relative;
-  bottom: 792px;
-  left: 1675px;
+  bottom: 807px;
+  left: 1190px;
   background-color: black;
   border-radius: 40px;
   color: white;
@@ -131,9 +127,8 @@ h2 {
 
 .video-container {
   position: absolute;
-  top: -290px
-  margin-top: 35%;
-  /* padding-top: 50px; */
+  top: -15px;
+  right: -400px;
 }
 
 .error-message {
