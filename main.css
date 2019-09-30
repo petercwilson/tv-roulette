@@ -79,9 +79,9 @@ h2 {
 }
 
 .close {
-  position: relative;
-  bottom: 807px;
-  left: 1190px;
+  position: fixed;
+  top: 89px;
+  right: 365px;
   background-color: black;
   border-radius: 40px;
   color: white;
