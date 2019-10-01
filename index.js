@@ -21,15 +21,15 @@ function showTvShowsOnClick(responseJson) {
         <div id="overview">
           <h2>Overview</h2>
           <p>${firstRandom.overview}</p>
-        </div>
-        <div id="add-buttons">
-          <button class="add-btn btn-red btn-large" role="link">get show</button>
-          <button class="btn btn-red btn-large video-btn" role="link">watch trailer</button>
+          <div class="buttons">
+            <button class="add-btn btn-red btn-large" role="link">get another show</button>
+            <button class="btn btn-red btn-large video-btn" role="link">watch trailer</button>
+          </div>
         </div>
       `)
     $('.results').removeClass('hidden');
-    $('.left-container').on('click', '.video-btn', function(event) {
-      $('.video-container').empty();
+    $('.results').on('click', '.video-btn', function(event) {
+      $('.video-container').replaceWith();
       $('.results').append(`
         <div class="video-container">
           <iframe id="ytplayer" type="text/html" width="800px" height="600px"
@@ -57,13 +57,13 @@ function listenForNextShow(responseJson) {
           <p>${secondRandom.overview}</p>
         </div>
         <div id="add-buttons">
-          <button class="add-btn btn-red btn-large" role="link">get show</button>
+          <button class="add-btn btn-red btn-large" role="link">get another show</button>
           <button class="btn btn-red btn-large video-btn" role="link">watch trailer</button>
         </div>
       `)
     $('.results').removeClass('hidden');
-    $('.left-container').on('click', '.video-btn', function(event) {
-      $('.video-container').empty();
+    $('.results').on('click', '.video-btn', function(event) {
+      $('.video-container').replaceWith();
       $('.results').append(`
         <div class="video-container">
           <iframe id="ytplayer" type="text/html" width="auto" height="auto"

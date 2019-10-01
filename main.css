@@ -1,372 +1,302 @@
+/* ================================= 
+  Base Element Styles
+==================================== */
+
 * {
-    box-sizing: border-box;
-  }
+	box-sizing: border-box;
+}
 
 body {
-  font-family: 'Roboto', sans-serif;
-  background-color: black;
-  background-image: url('img/fanart_1760.jpg');
-  background-repeat: no-repeat;
-  width: 100%;
-  top: 0;
-  left: 0;
+	font-family: 'Varela Round', sans-serif;
+	line-height: 1.6;
+	color: #3a3a3a;
 }
 
-header {
-    background-color: black;
-    font-size: 1.75em;
-    position: fixed;
-    top: 0;
-    left: 600px;
+p {
+	font-size: .95em;
+	margin-bottom: 1.8em;
 }
 
-header > h1 {
-  margin: 10px 18px;
-  text-align: left;
-  color: red;
-  font-size: .50em;
-  position: fixed;
-  top: 0;
-  left: 0;
+h2,
+h3,
+a {
+	color: #093a58;
 }
 
-h1 {
-  font-size: 2em;
-  color: white;
+h2,
+h3,
+h4 {
+	margin-top: 0;
 }
 
-h2 {
+h4 {
+	margin-bottom: .4em;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+  max-width: 30%;
+  overflow: hidden;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  margin-top: 2em;
+}
+
+figure {
+	margin: 0;
+	line-height: 0;
+	position: relative;
+}
+
+figcaption {
+	font-size: .9em;
+	line-height: 1.5;
+	color: #fff;
+	padding: 1em;	
+	background: rgba(19,43,102, .85);
+	
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+}
+
+/* ================================= 
+  Base Layout Styles
+==================================== */
+
+/* ---- Navigation ---- */
+
+.name {
+	font-size: 1.25em;
+	margin: 0;
+}
+
+.main-nav {
+	margin-top: 5px;
+}
+
+.name a,
+.main-nav a {
+  display: block;
   text-align: center;
-  color: white;
-  position: relative;
-  top: 0;
-  right: 56px;
+  padding: 10px 15px;
 }
 
-.left-container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 40px 60px 40px 24px;
-  position: relative;
-  top: 50px;
+.main-nav a {
+  font-size: .95em;
+  color: #3acec2;
+  text-transform: uppercase;
 }
 
-.start {
-  position: relative;
-  margin: 0 auto 0;
-  top: 10px;
+.main-nav a:hover {
+  color: #338a7a;
 }
 
-.start .btn {
-  margin: 5px 155px;
-  border: none;
+/* ---- Layout Containers ---- */
+
+.main-header {
+	padding-top: .5em;
+	padding-bottom: .5em;
 }
 
-#add-buttons {
-  position: relative;
-  top: -135px;
-  left: 42px;
+.banner,
+.main-footer {
+	text-align: center;
 }
 
-.video-btn {
-  position: relative;
-  border: none;
+.banner {
+	color: #fff;
+	background: #3acec2;
+	padding: 3.2em 0;
+	margin-bottom: 60px;
 }
 
-.add-btn {
-  padding-right: 20px;
-  border: none;
+.col {
+	padding-right: 1em;
+	padding-left: 1em;
+}
+
+.main-footer {
+	background: #d9e4ea;
+	padding: 2em 0;
+	margin-top: 30px;
+}
+
+/* ---- Page Elements ---- */
+
+.logo {
+	width: 190px;
+}
+
+.headline {
+	margin-bottom: 0;
+}
+
+.icon-location {
+	width: 35px;
+	position: absolute;
+	top: -15px;
+	right: -15px;
+}
+
+.buttons {
+  margin: 15px;
 }
 
 .close {
-  position: fixed;
-  top: 89px;
-  right: 365px;
-  background-color: black;
-  border-radius: 40px;
-  color: white;
-  width: 25px;
-  height: 25px;
-  cursor: pointer;
-}
-
-.start > p {
-  font-size: 1.25em;
-  color: white;
-}
-
-.results {
   position: relative;
-  margin-top: 20px;
-  height: 200px;
+  bottom: 43px;
+  left: 1147px;
 }
 
-.results > img {
+/* ---- Video Elements ---- */
+
+.video-container {
+  position: relative;
+  bottom: 720px;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+.video-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 320px) {
+  img {
+      max-width: 100%;
+    }
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
+  height: 0;
+}
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+  .container {
+  width: 85%;
+  margin: 0 auto;
+    }
+
+  .wrap {
+    min-height: calc(100vh - 119px);
+    }
+  }
+
+@media (min-width: 600px) {
+img {
+    max-width: 80%;
+  }
+
+body {
+  padding-top: 68px;
+  }
+
+.wrap {
+  min-height: calc(100vh - 119px);
+}
+
+.main-header {
+  position: fixed;
+  background: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,.4);
+  width: 100%;
+  top: 0;
+}
+
+.video-container {
+  position: relative;
+	padding-bottom: 56.25%; /* 16:9 */
+	padding-top: 25px;
+	height: 0;
+}
+
+.video-container iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.container {
+  width: 70%;
   margin: 0 auto;
 }
 
-.results > p {
-  left: 450px;
-  bottom: 300px;
-  font-size: 1em;
-  color: lightslategray;
+.name,
+.col {
+  float: left;
 }
 
-.thumbnail {
+.primary,
+.secondary {
   width: 50%;
 }
 
-#overview {
-  color: white;
-  font-size: 14px;
-  width: 200px;
-  position: relative;
-  bottom: 410px;
-  left: 304px;
+.main-nav {
+  float: right;
 }
 
-.video-container {
-  position: absolute;
-  top: -15px;
-  right: -400px;
+.main-nav li {
+  display: inline-block;
+  margin-left: 15px;
 }
 
-.error-message {
-    color: red;
+.tagline {
+  font-size: 1.4em;
 }
 
-.hidden {
-  display: none;
-}
-
-/* Button Styling */
-
-.add-btn .btn {
-display: inline-block;
-text-decoration: none;
-line-height: 1em;
-vertical-align: middle;
-cursor: pointer;
-font-weight: 400;
-letter-spacing: .1px;
--webkit-border-radius: 2px;
--moz-border-radius: 2px;
-border-radius: 2px;
--webkit-user-select: none;
--moz-user-select: none;
--ms-user-select: none;
-user-select: none;
-text-align: center;
--webkit-box-sizing: border-box;
--moz-box-sizing: border-box;
-box-sizing: border-box;
-border: 0;
-position: relative;
-color: #000;
-background-color: #e6e6e6;
-background-image: -webkit-gradient(linear,left top,left bottom,from(#e6e6e6),to(#ddd));
-background-image: -webkit-linear-gradient(top,#e6e6e6,#ddd);
-background-image: -moz- oldlinear-gradient(top,#e6e6e6,#ddd);
-background-image: -o-linear-gradient(top,#e6e6e6,#ddd);
-background-image: linear-gradient(to bottom,#e6e6e6,#ddd);
--webkit-box-shadow: 0 1px 0 rgba(0,0,0,.2);
--moz-box-shadow: 0 1px 0 rgba(0,0,0,.2);
-box-shadow: 0 1px 0 rgba(0,0,0,.2);
-}
-
-.btn-red {
-color: #fff;
-background-color: #e50914;
-background-image: -webkit-gradient(linear,left top,left bottom,from(#e50914),to(#db0510));
-background-image: -webkit-linear-gradient(top,#e50914,#db0510);
-background-image: -moz- oldlinear-gradient(top,#e50914,#db0510);
-background-image: -o-linear-gradient(top,#e50914,#db0510);
-background-image: linear-gradient(to bottom,#e50914,#db0510);
--webkit-box-shadow: 0 1px 0 rgba(0,0,0,.45);
--moz-box-shadow: 0 1px 0 rgba(0,0,0,.45);
-box-shadow: 0 1px 0 rgba(0,0,0,.45);
-}
-
-.btn-large {
-font-size: 20px;
-padding: 14px 2em;
-min-width: 112px;
-min-height: 48px;
-margin-right: 36px;
-}
-
-a:focus,
-button:focus,
-input:focus,
-textarea:focus {
-outline: none;
-}
-
-/* MEDIA QUERIES */
-
-@media only screen and (min-width: 320px) and (max-width: 460px) {
-body {
-  background-image: url('img/fanart_460.jpg');
-  background-repeat: repeat;
-}
-
-.results > img {
-  margin: 0 5em;
-}
-
-.thumbnail {
-  width: 60%;
-}
-
-#overview {
-  color: white;
-  font-size: 14px;
-  width: 200px;
-  margin: 0 6em;
-  top: 0;
-  left: 0;
-}
-
-#add-buttons {
-  margin: 0 1em;
-  top: 13px;
-  left: 61px;
-  position: relative;
-}
-
-.video-btn, .add-btn {
-  font-size: 10px;
-  padding: 7px 1em;
-  min-width: 60px;
-  min-height: 18px;
-  margin-right: 20px;
-  }
-
-#ytplayer {
-  position: relative;
-  width: 340px;
-  height: 271px;
-  }
-
-.video-container {
-  position: fixed;
-  top: 75px;
-  width: 50px;
-  height: 50px;
-  margin: 0 auto;
-  }
-
-.close {
-  position: relative;
-  top: -288px;
-  left: 322px;
-  }
-
-.start {
-  position: relative;
-  margin: 0 auto;
-  top: 10px;
-  text-align: center;
-}
-
-.start .btn {
-  margin: 5px auto;
-  border: none;
-}
-
-.btn-large {
-  font-size: 12px;
-  padding: 9px 1em;
-  /* min-width: 112px; */
-  /* min-height: 46px; */
-  margin-right: 7px;
+.results {
+  margin-top: 50px;
   }
 }
 
-@media only screen and (min-width:461) and (max-width: 720px) {
-body {
-  background-image: url('img/fanart_720.jpg');
-  background-repeat: repeat;
+@media (min-width: 1025px) { 
+  img {
+    width: 30%;
   }
 }
 
-@media only screen and (min-width: 721px) and (max-width: 980px) {
-body {
-  background-image: url('img/fanart_980.jpg');
-  background-repeat: repeat;
+/* ---- Float clearfix ---- */
+@media (min-width: 1025px) { 
+.clearfix::after {
+  content: " ";
+  display: table;
+  clear: both;
   }
 
-.start {
-  position: relative;
-  margin: 0 auto;
-  top: 10px;
-  left: 34px;
-}
-
-#ytplayer {
-  position: relative;
-  width: 734px;
-  height: 582px;
+  .container {
+    width: 80%;
+    max-width: 1150px;
   }
-
-.video-container {
-  position: relative;
-  top: -758px;
-  right: 101px;
-  margin: 0 auto;
+  
+  .primary {
+    width: 40%;
   }
-
-.close {
-  position: relative;
-  top: -612px;
-  left: 717px;
+  
+  .secondary,
+  .tertiary {
+    width: 30%; 
+    }
   }
-}
-
-@media only screen and (min-width:981px) and (max-width: 1240px) {
-body {
-  background-image: url('img/fanart_1240.jpg');
-  background-repeat: repeat;
-  }
-
-#ytplayer {
-  position: relative;
-  width: 734px;
-  height: 582px;
-  }
-
-.video-container {
-  position: relative;
-  top: -758px;
-  right: 101px;
-  margin: 0 auto;
-  }
-
-.close {
-  position: relative;
-  top: -612px;
-  left: 717px;
-  }
-}
-
-@media only screen and (min-width:1241px) and (max-width: 1500px) {
-body {
-  background-image: url('img/fanart_1500.jpg');
-  background-repeat: repeat;
-  }
-}
-
-@media only screen and (min-width:1501px) and (max-width: 1760px) {
-body {
-  background-image: url('img/fanart_1760.jpg');
-  background-repeat: repeat;
-  }
-
-#ytplayer {
-  position: relative;
-  top: 25px;
-  left: 288px;
-  width: 1400px;
-  height: 800px;
-  }
-}
