@@ -8,7 +8,7 @@
 <br />
 <br />
 <h2>Demo</h2>
-<p>Live App:<a link="https://petercwilson.github.io/tv-show-picker/index.html">Live Demo</a></p>
+<p>Live App:<a href="https://petercwilson.github.io/tv-show-picker/index.html"> Live Demo </a></p>
 <br />
 <br />
 <h2>Technologies Used</h2>
