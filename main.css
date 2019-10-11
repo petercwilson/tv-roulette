@@ -193,12 +193,12 @@ figcaption {
   height: 100%;
 }
 
-  .container {
+.container {
   width: 85%;
   margin: 0 auto;
     }
 
-  .wrap {
+.wrap {
     min-height: calc(100vh - 119px);
     }
   }
