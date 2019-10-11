@@ -3,7 +3,7 @@
 <br />
 <h2>Screenshots</h2>
 <br />
-<img src="https://cvws.icloud-content.com/B/AefEak5ur8q-AtMIbinw7FMuGN-MATPLcRziqqLNQQymQFp4-mIgQ8zv/tvshowpicker-screenshot1.png?o=AvCJ13V2X5dXzul6nZ9wvLYtrsM3KCXf8Eip8c6LPGRL&v=1&x=3&a=CAog6SDikW1lT-hjUxRVSzD-hjNaFYzFOQmrR_P3Dz-igPUSHRCl9Y-z2y0YxezGs9stIgEAUgQuGN-MWgQgQ8zv&e=1570723968&k=yJAwt-bSDMaa8lo99ylDcg&fl=&r=45a0c0f8-393c-4cea-b8d8-a8df987d84a7-1&ckc=com.apple.clouddocs&ckz=com.apple.CloudDocs&p=61&s=XLXMYx_gyY9PprJjSBRXNOOGw-o&cd=i" />
+<img src="https://github.com/petercwilson/tv-show-picker/blob/master/img/tvshowpicker-screenshot1.png" />
 <br />
 <h2>Demo</h2>
 <ul>
